@@ -44,7 +44,7 @@
 
 
 #include "Window.h"
-
+#include <sstream>
 
 int CALLBACK WinMain(
 	HINSTANCE hInstance,
@@ -63,10 +63,17 @@ int CALLBACK WinMain(
 			// TranslateMessage will post auxilliary WM_CHAR messages from key msgs
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
-			if (wnd.kbd.KeyIsPressed(VK_MENU))
+
+			// test code
+			const auto test = wnd.mouse.Read();
+			if (test.GetType() == Mouse::Event::Type::WheelUp)
 			{
-				MessageBox(nullptr, "Something Happon!", "Space Key Was Pressed", MB_OK | MB_ICONEXCLAMATION);
+				std::ostringstream oss;
+				oss << "Mouse Position: (" << test.GetPosX() << "," << test.GetPosY() << ")";
+				wnd.SetTitle(oss.str());
 			}
+			//
+			
 		}
 
 		// check if GetMessage call itself borked
