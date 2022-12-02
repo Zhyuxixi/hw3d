@@ -135,6 +135,34 @@ LRESULT Window::HandleMsg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noe
 	case WM_CLOSE:
 		PostQuitMessage(0);
 		return 0;
+
+	// clear keystate when window loses focus to prevent inputting 当离开当前窗口时，清除当前窗口所有keyboard状态
+	case WM_KILLFOCUS:
+		kbd.ClearState();
+		break;
+		/*********** KEYBOARD MESSAGES ***********/
+	case WM_SYSKEYDOWN:	//系统按键处理
+		if (!(lParam & 0x40000000) || kbd.AutorepeatIsEnabled()) 
+		{
+			kbd.OnKeyPressed(static_cast<unsigned char>(wParam));
+		}
+		break;
+	case WM_KEYDOWN:
+		if (!(lParam & 0x40000000) || kbd.AutorepeatIsEnabled()) // filter autorepeat处理持续按键的情况
+		{
+			kbd.OnKeyPressed(static_cast<unsigned char>(wParam));
+		}
+		break;
+	case WM_KEYUP:
+		kbd.OnKeyReleased(static_cast<unsigned char>(wParam));
+		break;
+	case WM_SYSKEYUP:
+		kbd.OnKeyReleased(static_cast<unsigned char>(wParam));
+		break;
+	case WM_CHAR:
+		kbd.OnChar(static_cast<unsigned char>(wParam));
+		break;
+		/*********** END KEYBOARD MESSAGES ***********/
 	}
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
