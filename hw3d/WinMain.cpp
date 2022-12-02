@@ -45,6 +45,7 @@
 
 #include "Window.h"
 #include <sstream>
+#include "App.h"
 
 int CALLBACK WinMain(
 	HINSTANCE hInstance,
@@ -54,36 +55,7 @@ int CALLBACK WinMain(
 {
 	try
 	{
-		Window wnd(720, 540, "My Littel QingBao");
-
-		MSG msg;
-		BOOL gResult;
-		while ((gResult = GetMessage(&msg, nullptr, 0, 0)) > 0)
-		{
-			// TranslateMessage will post auxilliary WM_CHAR messages from key msgs
-			TranslateMessage(&msg);
-			DispatchMessage(&msg);
-
-			// test code
-			const auto test = wnd.mouse.Read();
-			if (test.GetType() == Mouse::Event::Type::WheelUp)
-			{
-				std::ostringstream oss;
-				oss << "Mouse Position: (" << test.GetPosX() << "," << test.GetPosY() << ")";
-				wnd.SetTitle(oss.str());
-			}
-			//
-			
-		}
-
-		// check if GetMessage call itself borked
-		if (gResult == -1)
-		{
-			throw CHWND_LAST_EXCEPT();
-		}
-
-		// wParam here is the value passed to PostQuitMessage
-		return msg.wParam;
+		return App{}.Go();
 	}
 	catch (const ChiliException& e)
 	{
