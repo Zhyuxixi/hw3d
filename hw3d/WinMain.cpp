@@ -43,31 +43,36 @@
 //}
 
 
+#include "Window.h"
+
+
 int CALLBACK WinMain(
-	HINSTANCE	hInstance,
-	HINSTANCE	hPrevInstance,
-	LPSTR		lpCmdLine,
-	int			nCmdShow)
+	HINSTANCE hInstance,
+	HINSTANCE hPrevInstance,
+	LPSTR     lpCmdLine,
+	int       nCmdShow)
 {
 	try
 	{
-		Window wnd(720, 540, "Donkey Fart Box");
-		
+		Window wnd(720, 540, "My Littel QingBao");
+
 		MSG msg;
 		BOOL gResult;
-
 		while ((gResult = GetMessage(&msg, nullptr, 0, 0)) > 0)
 		{
+			// TranslateMessage will post auxilliary WM_CHAR messages from key msgs
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
 
+		// check if GetMessage call itself borked
 		if (gResult == -1)
 		{
-			return -1;
+			throw CHWND_LAST_EXCEPT();
 		}
-		
-			return msg.wParam;
+
+		// wParam here is the value passed to PostQuitMessage
+		return msg.wParam;
 	}
 	catch (const ChiliException& e)
 	{
@@ -81,5 +86,5 @@ int CALLBACK WinMain(
 	{
 		MessageBox(nullptr, "No details available", "Unknown Exception", MB_OK | MB_ICONEXCLAMATION);
 	}
-	
+	return -1;
 }
