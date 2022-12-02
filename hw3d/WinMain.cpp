@@ -52,8 +52,7 @@ int CALLBACK WinMain(
 	try
 	{
 		Window wnd(720, 540, "Donkey Fart Box");
-		Window wnd2(720, 540, "Donkey Fart Box");
-
+		
 		MSG msg;
 		BOOL gResult;
 
