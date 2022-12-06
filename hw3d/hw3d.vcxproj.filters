@@ -92,7 +92,13 @@
       <Filter>Application Layer</Filter>
     </ClCompile>
     <ClCompile Include="WinMain.cpp" />
-    <ClCompile Include="BaseDraw.cpp">
+    <ClCompile Include="Box.cpp">
+      <Filter>Graphic Layer\Drawable Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="Melon.cpp">
+      <Filter>Graphic Layer\Drawable Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="Pyramid.cpp">
       <Filter>Graphic Layer\Drawable Instance</Filter>
     </ClCompile>
   </ItemGroup>
@@ -196,7 +202,13 @@
     <ClInclude Include="DrawableBase.h">
       <Filter>Graphic Layer</Filter>
     </ClInclude>
-    <ClInclude Include="BaseDraw.h">
+    <ClInclude Include="Box.h">
+      <Filter>Graphic Layer\Drawable Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="Melon.h">
+      <Filter>Graphic Layer\Drawable Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="Pyramid.h">
       <Filter>Graphic Layer\Drawable Instance</Filter>
     </ClInclude>
   </ItemGroup>
@@ -226,6 +238,18 @@
       <Filter>Resource Files\Shader</Filter>
     </FxCompile>
     <FxCompile Include="PixelShader.hlsl">
+      <Filter>Resource Files\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="ColorIndexVS.hlsl">
+      <Filter>Resource Files\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="ColorBlendVS.hlsl">
+      <Filter>Resource Files\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="ColorIndexPS.hlsl">
+      <Filter>Resource Files\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="ColorBlendPS.hlsl">
       <Filter>Resource Files\Shader</Filter>
     </FxCompile>
   </ItemGroup>

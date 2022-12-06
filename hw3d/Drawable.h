@@ -11,7 +11,8 @@ class Drawable
 public:
 	Drawable() = default;
 	Drawable(const Drawable&) = delete;
-	virtual DirectX::XMMATRIX GetTransformXM() const noexcept = 0;
+	virtual DirectX::XMMATRIX GetTransformXM() const noexcept = 0; //1\当想在基类中抽象出一个方法，且该基类只做能被继承，而不能被实例化；
+																	//2，这个方法必须在派生类(derived class)中被实现；
 	void Draw(Graphics& gfx) const noexcept(!IS_DEBUG);
 	virtual void Update(float dt) noexcept = 0;
 	virtual ~Drawable() = default;

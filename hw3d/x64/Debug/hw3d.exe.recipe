@@ -7,6 +7,18 @@
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
+      <FullPath>D:\dev\CG\hw3d\hw3d\ColorBlendPS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\dev\CG\hw3d\hw3d\ColorBlendVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\dev\CG\hw3d\hw3d\ColorIndexPS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\dev\CG\hw3d\hw3d\ColorIndexVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
       <FullPath>D:\dev\CG\hw3d\hw3d\PixelShader.cso</FullPath>
     </ContentFile>
     <ContentFile>
