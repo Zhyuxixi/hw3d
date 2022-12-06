@@ -1,2 +1,4 @@
-﻿  LINK : 没有找到 D:\dev\CG\hw3d\x64\Debug\hw3d.exe 或上一个增量链接没有生成它；正在执行完全链接
+﻿  App.cpp
+  BaseDraw.cpp
+  WinMain.cpp
   hw3d.vcxproj -> D:\dev\CG\hw3d\x64\Debug\hw3d.exe
