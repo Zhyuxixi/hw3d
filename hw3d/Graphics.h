@@ -5,9 +5,14 @@
 #include <wrl.h>
 #include <vector>
 #include "DxgiInfoManager.h"
+#include <d3dcompiler.h>
+#include <DirectXMath.h>
+#include <memory>
+#include <random>
 
 class Graphics
 {
+	friend class Bindable;
 public:
 	class Exception : public ChiliException
 	{
@@ -16,7 +21,7 @@ public:
 	class HrException : public Exception
 	{
 	public:
-		HrException(int line, const char* file, HRESULT hr, std::vector<std::string> infoMsgs = {}) noexcept;
+		HrException( int line,const char* file,HRESULT hr,std::vector<std::string> infoMsgs = {} ) noexcept;
 		const char* what() const noexcept override;
 		const char* GetType() const noexcept override;
 		HRESULT GetErrorCode() const noexcept;
@@ -30,7 +35,7 @@ public:
 	class InfoException : public Exception
 	{
 	public:
-		InfoException(int line, const char* file, std::vector<std::string> infoMsgs) noexcept;
+		InfoException( int line,const char* file,std::vector<std::string> infoMsgs ) noexcept;
 		const char* what() const noexcept override;
 		const char* GetType() const noexcept override;
 		std::string GetErrorInfo() const noexcept;
@@ -46,14 +51,17 @@ public:
 		std::string reason;
 	};
 public:
-	Graphics(HWND hWnd);
-	Graphics(const Graphics&) = delete;
-	Graphics& operator=(const Graphics&) = delete;
+	Graphics( HWND hWnd );
+	Graphics( const Graphics& ) = delete;
+	Graphics& operator=( const Graphics& ) = delete;
 	~Graphics() = default;
 	void EndFrame();
-	void ClearBuffer(float red, float green, float blue) noexcept;
-	void DrawTestTriangle(float angle, float x, float y);
+	void ClearBuffer( float red,float green,float blue ) noexcept;
+	void DrawIndexed( UINT count ) noexcept(!IS_DEBUG);
+	void SetProjection( DirectX::FXMMATRIX proj ) noexcept;
+	DirectX::XMMATRIX GetProjection() const noexcept;
 private:
+	DirectX::XMMATRIX projection;
 #ifndef NDEBUG
 	DxgiInfoManager infoManager;
 #endif

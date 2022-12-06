@@ -1,12 +1,12 @@
 #pragma once
-#include <chrono> //时间库
+#include <chrono>
 
 class ChiliTimer
 {
 public:
 	ChiliTimer() noexcept;
-	float Mark() noexcept;			//时间间隔
-	float Peek() const noexcept;		//时间累积
+	float Mark() noexcept;
+	float Peek() const noexcept;
 private:
 	std::chrono::steady_clock::time_point last;
 };
