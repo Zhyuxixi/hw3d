@@ -1,0 +1,24 @@
+﻿  compilation object save succeeded; see D:\dev\CG\hw3d\hw3d\PixelShader.cso
+  compilation object save succeeded; see D:\dev\CG\hw3d\hw3d\VertexShader.cso
+  App.cpp
+  Bindable.cpp
+  Box.cpp
+  ChiliException.cpp
+  ChiliTimer.cpp
+  Drawable.cpp
+  dxerr.cpp
+  DxgiInfoManager.cpp
+  Graphics.cpp
+  IndexBuffer.cpp
+  InputLayout.cpp
+  Keyboard.cpp
+  Mouse.cpp
+  PixelShader.cpp
+  Topology.cpp
+  TransformCbuf.cpp
+  VertexBuffer.cpp
+  VertexShader.cpp
+  Window.cpp
+  WindowsMessageMap.cpp
+  WinMain.cpp
+  hw3d.vcxproj -> D:\dev\CG\hw3d\x64\Debug\hw3d.exe
