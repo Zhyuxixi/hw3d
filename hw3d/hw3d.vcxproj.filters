@@ -26,6 +26,12 @@
     <Filter Include="Graphic Layer\Bindable">
       <UniqueIdentifier>{ca931623-77ca-4413-a547-16916dac2740}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graphic Layer\Geometric Primitives">
+      <UniqueIdentifier>{682579ea-5e3a-49ab-b0df-1e9d1fb9d3a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic Layer\Drawable Instance">
+      <UniqueIdentifier>{bbb6303e-da65-48b0-8d74-7804a18e5550}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dxerr.cpp">
@@ -54,9 +60,6 @@
     </ClCompile>
     <ClCompile Include="IndexBuffer.cpp">
       <Filter>Graphic Layer\Bindable</Filter>
-    </ClCompile>
-    <ClCompile Include="Box.cpp">
-      <Filter>Graphic Layer</Filter>
     </ClCompile>
     <ClCompile Include="Drawable.cpp">
       <Filter>Graphic Layer</Filter>
@@ -89,6 +92,9 @@
       <Filter>Application Layer</Filter>
     </ClCompile>
     <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="BaseDraw.cpp">
+      <Filter>Graphic Layer\Drawable Instance</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dxerr.h">
@@ -97,7 +103,7 @@
     <ClInclude Include="GraphicsThrowMacros.h">
       <Filter>Debug Layer\Macros</Filter>
     </ClInclude>
-    <ClInclude Include="WindowThrowMacros.h">
+    <ClInclude Include="WindowsThrowMacros.h">
       <Filter>Debug Layer\Macros</Filter>
     </ClInclude>
     <ClInclude Include="Bindable.h">
@@ -129,9 +135,6 @@
     </ClInclude>
     <ClInclude Include="VertexShader.h">
       <Filter>Graphic Layer\Bindable</Filter>
-    </ClInclude>
-    <ClInclude Include="Box.h">
-      <Filter>Graphic Layer</Filter>
     </ClInclude>
     <ClInclude Include="Drawable.h">
       <Filter>Graphic Layer</Filter>
@@ -168,6 +171,33 @@
     </ClInclude>
     <ClInclude Include="WindowsMessageMap.h">
       <Filter>Application Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Graphic Layer\Geometric Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Cone.h">
+      <Filter>Graphic Layer\Geometric Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Graphic Layer\Geometric Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Prism.h">
+      <Filter>Graphic Layer\Geometric Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Graphic Layer\Geometric Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="ChiliMath.h">
+      <Filter>Graphic Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexedTriangleList.h">
+      <Filter>Graphic Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableBase.h">
+      <Filter>Graphic Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDraw.h">
+      <Filter>Graphic Layer\Drawable Instance</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
