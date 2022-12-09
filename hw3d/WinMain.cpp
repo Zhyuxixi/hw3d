@@ -17,8 +17,8 @@
 *	You should have received a copy of the GNU General Public License					  *
 *	along with The Chili Direct3D Engine.  If not, see <http://www.gnu.org/licenses/>.    *
 ******************************************************************************************/
-#include "App.h"
-
+//#include "App.h"
+#include "DTVApp.h"
 
 int CALLBACK WinMain(
 	HINSTANCE hInstance,
@@ -28,7 +28,7 @@ int CALLBACK WinMain(
 {
 	try
 	{
-		return App{}.Go();
+		return DTVApp{}.Go();
 	}
 	catch( const ChiliException& e )
 	{
