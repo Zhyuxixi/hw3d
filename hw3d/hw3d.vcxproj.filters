@@ -20,9 +20,6 @@
     <Filter Include="Debug Layer\Macros">
       <UniqueIdentifier>{c62c91bc-50e8-4796-8319-6caf607ee4f8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\Shader">
-      <UniqueIdentifier>{246c933d-909b-4e52-ace4-7be4ab3da27b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Graphic Layer\Bindable">
       <UniqueIdentifier>{ca931623-77ca-4413-a547-16916dac2740}</UniqueIdentifier>
     </Filter>
@@ -31,6 +28,18 @@
     </Filter>
     <Filter Include="Graphic Layer\Drawable Instance">
       <UniqueIdentifier>{bbb6303e-da65-48b0-8d74-7804a18e5550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Images">
+      <UniqueIdentifier>{3cf77939-e9c2-4363-a4a8-dbee6a5ea40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{246c933d-909b-4e52-ace4-7be4ab3da27b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dpendencies">
+      <UniqueIdentifier>{610782df-25c5-4309-84b2-a60a79dfcf88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application Layer\I/O">
+      <UniqueIdentifier>{f756836e-660f-48a4-a217-0545701c3fc7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -76,21 +85,6 @@
     <ClCompile Include="App.cpp">
       <Filter>Application Layer</Filter>
     </ClCompile>
-    <ClCompile Include="ChiliTimer.cpp">
-      <Filter>Application Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Keyboard.cpp">
-      <Filter>Application Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Mouse.cpp">
-      <Filter>Application Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>Application Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="WindowsMessageMap.cpp">
-      <Filter>Application Layer</Filter>
-    </ClCompile>
     <ClCompile Include="WinMain.cpp" />
     <ClCompile Include="Box.cpp">
       <Filter>Graphic Layer\Drawable Instance</Filter>
@@ -100,6 +94,45 @@
     </ClCompile>
     <ClCompile Include="Pyramid.cpp">
       <Filter>Graphic Layer\Drawable Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="Surface.cpp">
+      <Filter>Dpendencies</Filter>
+    </ClCompile>
+    <ClCompile Include="GDIPlusManager.cpp">
+      <Filter>Dpendencies</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler.cpp">
+      <Filter>Graphic Layer\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Graphic Layer\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="WICTextureLoader11.cpp">
+      <Filter>Dpendencies</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Application Layer\I/O</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Application Layer\I/O</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Application Layer\I/O</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsMessageMap.cpp">
+      <Filter>Application Layer\I/O</Filter>
+    </ClCompile>
+    <ClCompile Include="ChiliTimer.cpp">
+      <Filter>Application Layer\I/O</Filter>
+    </ClCompile>
+    <ClCompile Include="Sheet.cpp">
+      <Filter>Graphic Layer\Drawable Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="TBDraw.cpp">
+      <Filter>Graphic Layer\Drawable Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="DTVApp.cpp">
+      <Filter>Application Layer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -157,27 +190,6 @@
     <ClInclude Include="App.h">
       <Filter>Application Layer</Filter>
     </ClInclude>
-    <ClInclude Include="ChiliTimer.h">
-      <Filter>Application Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="ChiliWin.h">
-      <Filter>Application Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Keyboard.h">
-      <Filter>Application Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Mouse.h">
-      <Filter>Application Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Application Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>Application Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowsMessageMap.h">
-      <Filter>Application Layer</Filter>
-    </ClInclude>
     <ClInclude Include="Cube.h">
       <Filter>Graphic Layer\Geometric Primitives</Filter>
     </ClInclude>
@@ -211,6 +223,51 @@
     <ClInclude Include="Pyramid.h">
       <Filter>Graphic Layer\Drawable Instance</Filter>
     </ClInclude>
+    <ClInclude Include="Surface.h">
+      <Filter>Dpendencies</Filter>
+    </ClInclude>
+    <ClInclude Include="GDIPlusManager.h">
+      <Filter>Dpendencies</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler.h">
+      <Filter>Graphic Layer\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Graphic Layer\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="WICTextureLoader11.h">
+      <Filter>Dpendencies</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Application Layer\I/O</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Application Layer\I/O</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Application Layer\I/O</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Application Layer\I/O</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsMessageMap.h">
+      <Filter>Application Layer\I/O</Filter>
+    </ClInclude>
+    <ClInclude Include="ChiliTimer.h">
+      <Filter>Application Layer\I/O</Filter>
+    </ClInclude>
+    <ClInclude Include="ChiliWin.h">
+      <Filter>Application Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Sheet.h">
+      <Filter>Graphic Layer\Drawable Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="TBDraw.h">
+      <Filter>Graphic Layer\Drawable Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="DTVApp.h">
+      <Filter>Application Layer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="hw3d.rc">
@@ -220,6 +277,9 @@
   <ItemGroup>
     <Image Include="chili.ico">
       <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="kappa50.png">
+      <Filter>Resource Files\Images</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
@@ -235,22 +295,28 @@
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="VertexShader.hlsl">
-      <Filter>Resource Files\Shader</Filter>
+      <Filter>Resource Files\Shaders</Filter>
     </FxCompile>
     <FxCompile Include="PixelShader.hlsl">
-      <Filter>Resource Files\Shader</Filter>
+      <Filter>Resource Files\Shaders</Filter>
     </FxCompile>
     <FxCompile Include="ColorIndexVS.hlsl">
-      <Filter>Resource Files\Shader</Filter>
+      <Filter>Resource Files\Shaders</Filter>
     </FxCompile>
     <FxCompile Include="ColorBlendVS.hlsl">
-      <Filter>Resource Files\Shader</Filter>
+      <Filter>Resource Files\Shaders</Filter>
     </FxCompile>
     <FxCompile Include="ColorIndexPS.hlsl">
-      <Filter>Resource Files\Shader</Filter>
+      <Filter>Resource Files\Shaders</Filter>
     </FxCompile>
     <FxCompile Include="ColorBlendPS.hlsl">
-      <Filter>Resource Files\Shader</Filter>
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="TextureVS.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="TexturePS.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>

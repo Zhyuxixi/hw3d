@@ -22,6 +22,12 @@
       <FullPath>D:\dev\CG\hw3d\hw3d\PixelShader.cso</FullPath>
     </ContentFile>
     <ContentFile>
+      <FullPath>D:\dev\CG\hw3d\hw3d\TexturePS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\dev\CG\hw3d\hw3d\TextureVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
       <FullPath>D:\dev\CG\hw3d\hw3d\VertexShader.cso</FullPath>
     </ContentFile>
   </ContentFiles>
