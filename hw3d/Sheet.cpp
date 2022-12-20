@@ -2,7 +2,6 @@
 #include "BindableBase.h"
 #include "GraphicsThrowMacros.h"
 #include "Plane.h"
-#include "Surface.h"
 #include "Texture.h"
 #include "Sampler.h"
 

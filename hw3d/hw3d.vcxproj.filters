@@ -95,12 +95,6 @@
     <ClCompile Include="Pyramid.cpp">
       <Filter>Graphic Layer\Drawable Instance</Filter>
     </ClCompile>
-    <ClCompile Include="Surface.cpp">
-      <Filter>Dpendencies</Filter>
-    </ClCompile>
-    <ClCompile Include="GDIPlusManager.cpp">
-      <Filter>Dpendencies</Filter>
-    </ClCompile>
     <ClCompile Include="Sampler.cpp">
       <Filter>Graphic Layer\Bindable</Filter>
     </ClCompile>
@@ -223,12 +217,6 @@
     <ClInclude Include="Pyramid.h">
       <Filter>Graphic Layer\Drawable Instance</Filter>
     </ClInclude>
-    <ClInclude Include="Surface.h">
-      <Filter>Dpendencies</Filter>
-    </ClInclude>
-    <ClInclude Include="GDIPlusManager.h">
-      <Filter>Dpendencies</Filter>
-    </ClInclude>
     <ClInclude Include="Sampler.h">
       <Filter>Graphic Layer\Bindable</Filter>
     </ClInclude>
@@ -279,6 +267,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="kappa50.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="image\rocket.png">
       <Filter>Resource Files\Images</Filter>
     </Image>
   </ItemGroup>
