@@ -1,5 +1,4 @@
 #include "Texture.h"
-#include "Surface.h"
 #include "GraphicsThrowMacros.h"
 #include "WICTextureLoader11.h"
 

@@ -164,7 +164,6 @@
     <ClCompile Include="DTVApp.cpp" />
     <ClCompile Include="dxerr.cpp" />
     <ClCompile Include="DxgiInfoManager.cpp" />
-    <ClCompile Include="GDIPlusManager.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="IndexBuffer.cpp" />
     <ClCompile Include="InputLayout.cpp" />
@@ -175,7 +174,6 @@
     <ClCompile Include="Pyramid.cpp" />
     <ClCompile Include="Sampler.cpp" />
     <ClCompile Include="Sheet.cpp" />
-    <ClCompile Include="Surface.cpp" />
     <ClCompile Include="TBDraw.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Topology.cpp" />
@@ -204,7 +202,6 @@
     <ClInclude Include="DTVApp.h" />
     <ClInclude Include="dxerr.h" />
     <ClInclude Include="DxgiInfoManager.h" />
-    <ClInclude Include="GDIPlusManager.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="GraphicsThrowMacros.h" />
     <ClInclude Include="IndexBuffer.h" />
@@ -221,7 +218,6 @@
     <ClInclude Include="Sampler.h" />
     <ClInclude Include="Sheet.h" />
     <ClInclude Include="Sphere.h" />
-    <ClInclude Include="Surface.h" />
     <ClInclude Include="TBDraw.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Topology.h" />
@@ -238,6 +234,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="chili.ico" />
+    <Image Include="image\rocket.png" />
     <Image Include="kappa50.png" />
   </ItemGroup>
   <ItemGroup>
